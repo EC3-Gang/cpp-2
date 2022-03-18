@@ -3,7 +3,7 @@ lang: en-us
 title: Bubble Sort
 ---
 
-# Bubble Sort
+## Bubble Sort
 
 Bubble Sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
 
@@ -23,7 +23,7 @@ It is one of the simplest sorting algorithms.
 | Sorting In Place | :white_check_mark:     |
 | Stable           | :white_check_mark:     |
 
-## Implementation
+### Implementation
 
 ```cpp
 /* Code for bubble sort */

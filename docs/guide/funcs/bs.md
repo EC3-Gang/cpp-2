@@ -3,9 +3,9 @@ lang: en-us
 title: Binary Search
 ---
 
-# Binary Search
+## Binary Search
 
-## Binary Search Explained
+### Binary Search Explained
 
 Binary Search is a searching algorithm used in a sorted array by
 repeatedly dividing the search interval in half.
@@ -24,7 +24,7 @@ The basic steps to perform Binary Search are:
 ![binary search](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
 _Image from GeeksforGeeks_
 
-## Implementation
+### Implementation
 
 There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
 There's really no need to write your own.
@@ -37,7 +37,7 @@ write your own Binary Search function.
 
 Here you go nerds:
 
-### Iteration method
+#### Iteration method
 
 ```cpp
 // Binary Search in C++
@@ -65,7 +65,7 @@ int binarySearch(int array[], int x, int low, int high) {
 }
 ```
 
-### Recursive method
+#### Recursive method
 
 This uses recursive functions, so you might want to go take a look at [this](/guide/more-adv/rf.md).
 

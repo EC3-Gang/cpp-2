@@ -1,8 +1,13 @@
-# Dynamic programming
+---
+lang: en-us
+title: Dynamic Programming
+---
+
+## Dynamic programming
 
 <Toc />
 
-## Dynamic programming explained
+### Dynamic programming explained
 
 Dynamic programming is a technique used to the vast majority of competitive programming,
 usually used to speed recursive or naive algorithms up.
@@ -25,7 +30,7 @@ long long sum(long long n) {
 While this method works, it is far too slow and may check multiple numbers multiple times.
 At $n = 5$, $\text{sum}(n)$ is recalculated 3 times.
 
-### Top-down DP
+#### Top-down DP
 
 Top-down dynamic programming is a speedup of naive recursive functions, by preventing the need of recalculating the same function multiple times.
 This involves memoisation, which is the storing of previous solutions.
@@ -46,7 +51,7 @@ The states are stored in $\text{memo}[]$, and the transition is $\text{memo}[n] 
 
 While this form of DP may be more intuitive sometimes, it usually takes up more memory.
 
-### Bottom up DP
+#### Bottom up DP
 
 Bottom-up dynamic programming is where you calculate all states leading up to the state that you are searching for.
 
@@ -62,17 +67,17 @@ for (long long i = 2; i < n; i++) {
 
 The states are stored in $\text{memo}[n]$, the base cases are $\text{memo}[0]$ and $\text{memo}[1]$, and the transition is $\text{memo}[i] = \text{memo}[i - 1] + \text{memo}[i - 2]$.
 
-### Conclusion
+#### Conclusion
 
 The 2 forms of DP have their own advantages.
 While bottom-up DP is usually more intuitive, some questions require the use of top-down DP.
 Regardless, both forms of DP help to speed up programs.
 
-## Common DP algorithms
+### Common DP algorithms
 
-### Prefix/suffix sum
+#### Prefix/suffix sum
 
-#### Introduction
+##### Introduction
 
 The objective of this form of dynamic programming is to be able to find the
 sum of all elements over a given range in an array. Usually, the naive code
@@ -89,7 +94,7 @@ While this method may be fast to find the range sum for 1 query,
 if there are multiple queries, the algorithm would run in $\mathcal{O}(NQ)$ in
 the worst case, where $Q$ is the number of queries.
 
-#### Precomputation
+##### Precomputation
 
 Precomputation is the act of making calculations prior to the actual query.
 While some of this calculations may not be used, having a set of numbers
@@ -113,7 +118,7 @@ While this method may seem too slow, it actually shortens down
 the time for each query to be $\mathcal{O}(1)$! So, the time
 complexity of the program overall would be $\mathcal{O}(N + Q)$.
 
-#### Conclusion
+##### Conclusion
 
 Prefix sums is a good way of keeping track of range sums.
 While prefix sums are a good way of handling querys on range sums,

@@ -4,7 +4,8 @@ title: Introduction
 
 ## CPP Guide for Competitive Programming (HCI EC³)
 
-This a guide made by a few EC³ members in Lower Secondary. Have fun reading and getting confused!
+This a guide made by a few EC³ members in Lower Secondary.
+Have fun reading and getting confused!
 
 ### Introduction to CP
 

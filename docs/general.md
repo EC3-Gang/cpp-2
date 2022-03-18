@@ -6,16 +6,21 @@ title: General Tips
 ## General Tips
 
 ::: danger WHAT NOT TO DO AT ALL COSTS
-Before I start, I thought that you should know that there are a few things that you should avoid at all costs when doing Competitve Programming.
+Before I start, I thought that you should know that there
+are a few things that you should avoid at all costs when
+doing Competitve Programming.
 
-1. Using Github Copilot or any other AI autocomplete assistants. You will be screamed at by certain contributors if you do.
+1. Using Github Copilot or any other AI autocomplete assistants.
+You will be screamed at by certain contributors if you do.
    :::
 
 ### Fast Input/Output
 
 #### Option 1: Use FastIO
 
-This is if you use `cin`/`cout`. Include the following two lines at the top of your code:
+This is if you use `cin`/`cout`.
+Include the following two lines at the top of your code, when `int main()`
+is first defined:
 
 ```cpp
 ios::sync_with_stdio(false);
@@ -32,7 +37,7 @@ if you are using only `cin` and `cout`.
 
 #### Option 2: Use `scanf`/`printf`
 
-Using `scanf` and `printf` from the C STL will decrease your runtime. Example:
+Using `scanf` and `printf` from the C STL will decrease your runtime.
 
 ```cpp
 #include <stdio.h>

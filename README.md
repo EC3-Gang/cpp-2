@@ -1,6 +1,6 @@
 # HCI EC3 CPP Guide
 
-Made by a few EC3 guys in Lower sec.
+Made by a few EC3 guys in Lower Sec.
 
 ## Contributing
 

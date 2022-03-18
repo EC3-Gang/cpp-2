@@ -3,11 +3,11 @@ lang: en-us
 title: The Basics
 ---
 
-# The basics of the basics of C++ (by Darryl)
+## C++ Basics
 
-Ok, so essentially, these are the things you must take note of when starting out with `C++`. I will first cover the data types.
+These are the things you must take note of when starting out with `C++`.
 
-## The Structure of a C++ Program
+### The Structure of a C++ Program
 
 ```cpp
 #include <iostream>
@@ -28,9 +28,9 @@ It is made up of three essential parts:
 Notice that we use `cout` for printing. The opposite of that, `cin >> variable`,
 is for receiving input to a variable, however that variable must be defined prior to the statement.
 
-## Data Types
+### Data Types
 
-### Basic Data Types
+#### Basic Data Types
 
 | Data Type | Size (in bytes) | Stores                                        | Example              |
 | --------- | --------------- | --------------------------------------------- | -------------------- |
@@ -41,7 +41,7 @@ is for receiving input to a variable, however that variable must be defined prio
 | `char`    | $1$             | A single character                            | `'D'`, `'$'`         |
 | `string`  | variable        | Multi-character text                          | `'hi mom'`           |
 
-### Data Type Modifiers
+#### Data Type Modifiers
 
 Numeric data types (`int` and `double`) can be modified with:
 
@@ -65,9 +65,9 @@ Note that the default modified datatype is `int`.
 | `unsigned long long` | $8$             | $0$ to $18 446 744 073 709 551 615$ |
 | `long double`        | $12$            | -                                   |
 
-## Control Flow
+### Control Flow
 
-### If Statements
+#### If Statements
 
 For leaving decisions to your computer.
 
@@ -89,7 +89,7 @@ and the following code to be executed is in curly braces.
 
 If you know how programming works, you can also use `else if` for multiple conditions.
 
-#### Logical Operators
+##### Logical Operators
 
 | Op.    | Means | True Example                 | False Example                |
 | ------ | ----- | ---------------------------- | ---------------------------- |
@@ -97,7 +97,7 @@ If you know how programming works, you can also use `else if` for multiple condi
 | `\|\|` | "or"  | `('s' == 's' or 't' == 'u')` | `('s' == 't' or 't' == 'u')` |
 | `!`    | "not" | `(!(5 < 3))`                 | `(!('a' == 'a'))`            |
 
-#### Comparison Operators
+##### Comparison Operators
 
 | Op.  | Means                       | True Example |
 | ---- | --------------------------- | ------------ |
@@ -108,9 +108,9 @@ If you know how programming works, you can also use `else if` for multiple condi
 | `<`  | is smaller than             | `(3 < 5)`    |
 | `<=` | is smaller than or equal to | `(5 <= 5)`   |
 
-### Loops
+#### Loops
 
-#### For Loop
+##### For Loop
 
 That's it.
 
@@ -124,7 +124,7 @@ int main() {
 }
 ```
 
-#### While Loop
+##### While Loop
 
 That's also it.
 
@@ -140,7 +140,7 @@ int main() {
 }
 ```
 
-## Functions
+### Functions
 
 ```cpp
 int add(int a, int b, int c) {

@@ -1,11 +1,16 @@
-# Recursive Functions
+---
+lang: en-us
+title: Dynamic Programming
+---
+
+## Recursive Functions
 
 Recursive functions are functions which are called within the same function.
 Crazy, right?
 
 Pseudocode:
 
-```
+```text
 function fn with variable A & B
   if A smaller or equals to B
     print a
@@ -29,9 +34,11 @@ Output:
 10
 ```
 
-## Uses in CP
+### Uses in CP
 
-Well...not a lot, to be honest. It TLEs when the there are too many recursions, but usually works for smaller inputs.
+Well...not a lot, to be honest.
+It TLEs when the there are too many recursions,
+but usually works for smaller inputs.
 
 Example of a recursive function in CP (calculates the Fibonacci sequence):
 
@@ -56,4 +63,5 @@ int main() {
 
 _The highlighted part is the recursive function._
 
-The above solution was written for [this problem](https://codebreaker.xyz/problem/fibo), but TLE'd on one of the last test cases.
+The above solution was written for [this problem](https://codebreaker.xyz/problem/fibo),
+but TLEd on one of the last testcases.
