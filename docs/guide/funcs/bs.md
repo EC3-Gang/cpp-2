@@ -26,11 +26,11 @@ _Image from GeeksforGeeks_
 
 ### Implementation
 
-There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
-There's really no need to write your own.
+There's actually a built-in function defined in header `<algorithm>`
+(`std::binary_search`).  There's really no need to write your own.
 You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
 
-Ok. I get it. You just feel restless and geeky and want to
+OK, I get it. You just feel restless and geeky and want to
 write your own Binary Search function.
 
 ::: details Code
@@ -51,14 +51,10 @@ int binarySearch(int array[], int x, int low, int high) {
   while (low <= high) {
     int mid = low + (high - low) / 2;
 
-    if (array[mid] == x)
-      return mid;
+    if (array[mid] == x) return mid;
 
-    if (array[mid] < x)
-      low = mid + 1;
-
-    else
-      high = mid - 1;
+    if (array[mid] < x) low = mid + 1;
+    else high = mid - 1;
   }
 
   return -1;
@@ -75,22 +71,20 @@ For example:
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-int recur(int n,int peaches)
-{
-	if(n==0) return peaches;
-	peaches=(peaches+1)*2;
-	return recur(n-1,peaches);
+int recur(int n,int peaches) {
+  if(n == 0) return peaches;
+  peaches = (peaches + 1) * 2;
+  return recur(n - 1, peaches);
 }
-int main()
-{
-	int peaches=1;
-	int n;
-	cin>>n;
-	cout<<recur(n,peaches);
+
+int main() {
+  int peaches = 1, n;
+  cin >> n;
+  cout << recur(n, peaches);
 }
 ```
 
-This is a recursive binary search algorithm
+This is a recursive binary search algorithm:
 
 ```cpp
 int binarySearch(int array[], int x, int low, int high) {
